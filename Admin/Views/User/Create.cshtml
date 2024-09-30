@@ -1,0 +1,12 @@
+@{
+ViewData["Title"] = "Create User";
+}
+
+<h2>Create a New User</h2>
+<form method="post" action="/User/Create">
+    <div class="form-group">
+        <label for="Email">Email:</label>
+        <input type="email" class="form-control" id="Email" name="Email" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

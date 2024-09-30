@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <img class="img-fluid" src="https://via.placeholder.com/500x500" alt="Product Image">
+    </div>
+    <div class="col-md-6">
+        <h1 class="my-3">Product @Model.Id</h1>
+        <h4>$24.99</h4>
+        <p>This is a detailed description of Product @Model.Id. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="btn btn-primary">Add to Cart</button>
+    </div>
+</div>

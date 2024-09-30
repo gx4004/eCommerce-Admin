@@ -1,0 +1,14 @@
+@model string
+
+@{
+ViewData["Title"] = "Edit User";
+}
+
+<h2>Edit User</h2>
+<form method="post" action="/User/Edit/@Model">
+    <div class="form-group">
+        <label for="Email">Email:</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

@@ -1,0 +1,27 @@
+@model List<string>
+
+@{
+ViewData["Title"] = "Categories";
+}
+
+<h2>Categories</h2>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Category Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for (var i = 0; i < Model.Count; i++)
+    {
+    <tr>
+        <td>@Model[i]</td>
+        <td><a href="/Category/Edit/@i" class="btn btn-warning">Edit</a></td>
+        <td><a href="/Category/Delete/@i" class="btn btn-danger">Delete</a></td>
+    </tr>
+    }
+    </tbody>
+</table>
+<a href="/Category/Create" class="btn btn-primary">Add New Category</a>
